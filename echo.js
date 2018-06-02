@@ -17,7 +17,7 @@ const requestHandler = (request, response) => {
   request.on('end', () => {
     body = Buffer(body).toString();
     const { headers, method, url } = request;
-    let requestHederList = [];
+    const requestHederList = [];
     for (let headerItem of Object.keys(headers)) {
       requestHederList.push(`\t${headerItem}: ${headers[headerItem]}`);
     }
@@ -25,7 +25,7 @@ const requestHandler = (request, response) => {
     console.log(`
 Method: ${method}\nURI: ${url}\n
 Headers:\n${requestHederList.join('\n')}\n\n${body}\n\n\n
-`)
+`);
 
     response.on('error', () => {
       response.writeHead(500);
