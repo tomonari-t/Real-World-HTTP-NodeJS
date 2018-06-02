@@ -14,7 +14,7 @@ const requestHandler = (request, response) => {
   });
 
   request.on('end', () => {
-    body = Buffer(body).toString();
+    body = Buffer.concat(body).toString();
     const { headers, method, url } = request;
     const requestHederList = [];
     for (let headerItem of Object.keys(headers)) {
