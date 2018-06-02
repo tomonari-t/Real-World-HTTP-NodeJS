@@ -2,7 +2,6 @@ const http = require('http');
 
 const PORT = 18888;
 const requestHandler = (request, response) => {
-  const { headers, method, url } = request;
 
   let body = [];
   request.on('error', (err) => {
@@ -17,6 +16,17 @@ const requestHandler = (request, response) => {
 
   request.on('end', () => {
     body = Buffer(body).toString();
+    const { headers, method, url } = request;
+    let requestHederList = [];
+    for (let headerItem of Object.keys(headers)) {
+      requestHederList.push(`\t${headerItem}: ${headers[headerItem]}`);
+    }
+
+    console.log(`
+Method: ${method}\nURI: ${url}\n
+Headers:\n${requestHederList.join('\n')}\n\n${body}\n\n\n
+`)
+
     response.on('error', () => {
       response.writeHead(500);
       response.end();
