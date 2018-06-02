@@ -2,7 +2,6 @@ const http = require('http');
 
 const PORT = 18888;
 const requestHandler = (request, response) => {
-
   let body = [];
   request.on('error', (err) => {
     response.writeHead(500);
@@ -23,8 +22,12 @@ const requestHandler = (request, response) => {
     }
 
     console.log(`
-Method: ${method}\nURI: ${url}\n
-Headers:\n${requestHederList.join('\n')}\n\n${body}\n\n\n
+Method: ${method}
+URI: ${url}
+Headers:
+${requestHederList.join('\n')}
+
+${body}
 `);
 
     response.on('error', () => {
