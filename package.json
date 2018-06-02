@@ -1,0 +1,19 @@
+{
+  "name": "real-world-http-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "echo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomonari-t/Real-World-HTTP-NodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomonari-t/Real-World-HTTP-NodeJS/issues"
+  },
+  "homepage": "https://github.com/tomonari-t/Real-World-HTTP-NodeJS#readme"
+}
