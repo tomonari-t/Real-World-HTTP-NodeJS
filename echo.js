@@ -36,8 +36,7 @@ ${body}
     });
 
     response.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
-    response.write('<html><body><h1>hello</h1></body></html>');
-    response.end();
+    response.end(body);
   });
 };
 
