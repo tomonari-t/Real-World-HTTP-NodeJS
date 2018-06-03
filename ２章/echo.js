@@ -35,8 +35,16 @@ ${body}
       response.end();
     });
 
-    response.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
-    response.end(body);
+    response.writeHead(200, {
+      'Content-Type': 'text/html; charset=utf-8',
+      'Set-Cookie': 'VISIT=TRUE'
+    });
+    if (headers['cookie']) {
+      response.end('<html><body>２回目以降ですね</body></html>');
+    } else {
+      response.end('<html><body>初めまして</body></html>');
+    }
+
   });
 };
 
