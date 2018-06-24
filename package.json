@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tomonari-t/Real-World-HTTP-NodeJS/issues"
   },
-  "homepage": "https://github.com/tomonari-t/Real-World-HTTP-NodeJS#readme"
+  "homepage": "https://github.com/tomonari-t/Real-World-HTTP-NodeJS#readme",
+  "dependencies": {
+    "form-data": "^2.3.2"
+  }
 }
