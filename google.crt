@@ -1,0 +1,59 @@
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:/C=US/ST=California/L=Mountain View/O=Google LLC/CN=www.google.com
+   i:/C=US/O=Google Trust Services/CN=Google Internet Authority G3
+ 1 s:/C=US/O=Google Trust Services/CN=Google Internet Authority G3
+   i:/OU=GlobalSign Root CA - R2/O=GlobalSign/CN=GlobalSign
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIEgjCCA2qgAwIBAgIIU/bUFZ/6iIswDQYJKoZIhvcNAQELBQAwVDELMAkGA1UE
+BhMCVVMxHjAcBgNVBAoTFUdvb2dsZSBUcnVzdCBTZXJ2aWNlczElMCMGA1UEAxMc
+R29vZ2xlIEludGVybmV0IEF1dGhvcml0eSBHMzAeFw0xODA2MDcxMDQwNDFaFw0x
+ODA4MTYwOTQ5MDBaMGgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApDYWxpZm9ybmlh
+MRYwFAYDVQQHDA1Nb3VudGFpbiBWaWV3MRMwEQYDVQQKDApHb29nbGUgTExDMRcw
+FQYDVQQDDA53d3cuZ29vZ2xlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+AQoCggEBAJprjdU1QPNnCopW1DxJ4nLXxTXrKbUddHGy5+2exGEt4DsLUr8l/EFe
+bM38xJoKtMlHJtEka2TjGjdUGjFakVp5XeQUY11S8cz5T7ReNbEAkXLVvCaQwuND
+ajmJqwZs0wZmv+nQEj43AzVuHMVHsE4EdZ5ebCb1ghxEsuXh5AE7tegddrA9BsZK
+fwT8hVhPNjI9028QmHyABj+YAKEEeWwWGv//9BbEu4YhJbtr5NjylBY1Rpi4ppum
+YuNWUb6bXLra9WoD0WL5DQo5r7Vf7fDVcMIWdYy1QBbizZXN6pgZDZmZSUdBocJc
+pNp8txFgXLbRuKy9yFAh0Qc04O+/NZ0CAwEAAaOCAUIwggE+MBMGA1UdJQQMMAoG
+CCsGAQUFBwMBMBkGA1UdEQQSMBCCDnd3dy5nb29nbGUuY29tMGgGCCsGAQUFBwEB
+BFwwWjAtBggrBgEFBQcwAoYhaHR0cDovL3BraS5nb29nL2dzcjIvR1RTR0lBRzMu
+Y3J0MCkGCCsGAQUFBzABhh1odHRwOi8vb2NzcC5wa2kuZ29vZy9HVFNHSUFHMzAd
+BgNVHQ4EFgQU8Q5aHIorlm0bWmlVoXNkcG8aa5wwDAYDVR0TAQH/BAIwADAfBgNV
+HSMEGDAWgBR3wrhQmmd2drEtwobQg6B+pn66SzAhBgNVHSAEGjAYMAwGCisGAQQB
+1nkCBQMwCAYGZ4EMAQICMDEGA1UdHwQqMCgwJqAkoCKGIGh0dHA6Ly9jcmwucGtp
+Lmdvb2cvR1RTR0lBRzMuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBfwwhhIWNyWbPJ
+ystObEM3sSAN+qMv15j5M/XmghNenM/hfUrZaYgZQw9BV+ElxixmQu5ZwMLYqyz7
+qd1Wd0pOUTDjRj+ZmqIpycH5mqUQnCvGz8xJb8k/Uxql7rRCoxvLoFE9WYoYK9SU
+2hkxRJrsfiTpPj0ikT1zASeJ1xEm1sOXP+V/eHjkUZ8xKRT36Wzf/9bFpZNypAu0
+1a03tuNVFPZgS6zcWVYf1wJ2gDChFYCN+45+TcEocX6VlCwbKO7n4VDzn+oUwZ9R
+M6cpFsvm0rwFLoUT9/Wr0+VnvcijTks3KXkw68X8eflXQdFBSLm292miXS5n3/5B
+cvIpDBXv
+-----END CERTIFICATE-----
+subject=/C=US/ST=California/L=Mountain View/O=Google LLC/CN=www.google.com
+issuer=/C=US/O=Google Trust Services/CN=Google Internet Authority G3
+---
+No client certificate CA names sent
+---
+SSL handshake has read 2450 bytes and written 456 bytes
+---
+New, TLSv1/SSLv3, Cipher is AES128-SHA
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+SSL-Session:
+    Protocol  : TLSv1
+    Cipher    : AES128-SHA
+    Session-ID: 654F3F0F2D0F65CA43B50E81380BBB05C2EE58C4D3EE2B0867152EA463A73166
+    Session-ID-ctx: 
+    Master-Key: 8DA6202DC34061ACF367321F9520483BFA56EB3B5159E0AF14AA738CC64ABBA112D9C58D30BC8CEC59C14B7EACD87610
+    Key-Arg   : None
+    Start Time: 1529851183
+    Timeout   : 300 (sec)
+    Verify return code: 0 (ok)
+---
