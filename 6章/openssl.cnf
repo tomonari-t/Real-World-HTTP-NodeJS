@@ -6,16 +6,16 @@ distinguished_name	= req_distinguished_name
 attributes		= req_attributes
 
 [ req_distinguished_name ]
-countryName			= Country Name (2 letter code)
+countryName			= JP
 countryName_min			= 2
 countryName_max			= 2
-stateOrProvinceName		= State or Province Name (full name)
-localityName			= Locality Name (eg, city)
-0.organizationName		= Organization Name (eg, company)
-organizationalUnitName		= Organizational Unit Name (eg, section)
-commonName			= Common Name (eg, fully qualified host name)
+stateOrProvinceName		= Tokyo
+localityName			= example.com
+0.organizationName		= tomonati.inc
+organizationalUnitName		= sales
+commonName			= tomo
 commonName_max			= 64
-emailAddress			= Email Address
+emailAddress			= webmaster@example.com
 emailAddress_max		= 64
 
 [ req_attributes ]
@@ -23,16 +23,22 @@ challengePassword		= A challenge password
 challengePassword_min		= 4
 challengePassword_max		= 20
 
-[CA]
+[ CA ]
 basicConstraints=critical,CA:TRUE,pathlen:0
 keyUsage=digitalSignature,keyCertSign,cRLSign
 
-[Server]
+[ Server ]
 basicConstraints=CA:FALSE
 keyUsage=digitalSignature,dataEncipherment
 extendedKeyUsage=serverAuth
 
-[Client]
+[ Client ]
 basicConstraints=CA:FALSE
 keyUsage=digitalSignature,dataEncipherment
 extendedKeyUsage=clientAuth
+
+[ req_distinguished_name ]
+countryName_default = JP
+stateOrProvinceName_default = Tokyo
+localityName_default = example.com
+emailAddress_default = webmaster@example.com
